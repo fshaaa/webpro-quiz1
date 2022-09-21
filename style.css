@@ -30,10 +30,14 @@ form {
   padding-top: 0;
 }
 
-form select,
-input {
+form input {
   margin-top: 20px;
   margin-bottom: -20px;
+  height: 25px;
+}
+
+form select{
+  margin-top: 20px;
   height: 25px;
 }
 

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Formulir Pendaftaran</title>
+</head>
+<body>
+  <section>
+    <div class="formulir">
+      <h1>Formulir Pendaftaran</h1>
+      <h3>Pekan Olahraga dan Seni Guru TKA/TKP</h3>
+      <h3>Tahun 2020</h3>
+      <form id="form">
+        <label>Nama Peserta:</label>
+        <input id="namaPeserta" type="text" placeholder="Tulis nama Anda disini"><br>
+        <label>Tempat Tanggal Lahir: </label>
+        <input id="ttl" type="text" placeholder="Tulis Tempat Tanggal Lahir Anda disini"><br>
+        <label>Utusan Unit TKA/TPA:</label>
+        <input id="unit" type="text" placeholder="Tulis Utusan Unit TKA/TPA Anda disini"><br>
+        <label>Kelurahan/Desa:</label>
+        <input id="desa" type="text" placeholder="Tulis Kelurahan/Desa Anda disini"><br>
+        <label>Kecamatan:</label>
+        <input id="kec" type="text" placeholder="Tulis Kecamatan Anda disini"><br>
+        <label>Nomor Telepon:</label>
+        <input id="telf" type="text" placeholder="Tulis Nomor Telepon Anda disini"><br>
+        <label>Jenis Lomba:</label>
+        <select id="jenisLomba" name="lomba" required>
+          <option value="" disabled selected>Pilih Jenis Lomba</option>
+          <option value="lomba1">1.Tarik Tambang (4 perempuan + 1 laki-laki = 5 orang)</option>
+          <option value="lomba2">2. Lari Estafet (4 perempuan)</option>
+          <option value="lomba3">3. Gobak Sodor (4 perempuan)</option> 
+          <option value="lomba4">4. Tartil (1 orang perwakilan TKA/TPA</option>
+          <option value="lomba5">5. Ceramah (1 orang perwakilan TKA/TPA</option>
+        </select><br>
+        <input onClick="submitForm()" type="submit" value="Submit" id="submit">
+      </form>
+    </div>
+  </section>
+  <script src="./script.js"></script>
+</body>
+</html>
